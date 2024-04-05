@@ -41,4 +41,9 @@
     .modal {
         @apply backdrop-blur-sm;
     }
+
+    .form-control.required .label .label-text::after {
+        content: " *";
+        @apply text-error;
+    }
 }

@@ -21,7 +21,7 @@ class UnitForm extends Form
     public function store(){
         $valid = $this->validate([
             'name' =>'required',
-            'description' =>'required',
+            'description' =>'',
         ]);
 
         Unit::create($valid);
@@ -31,7 +31,7 @@ class UnitForm extends Form
     public function update(){
         $valid = $this->validate([
             'name' =>'required',
-            'description' =>'required',
+            'description' =>'',
         ]);
 
         $this->unit->update($valid);

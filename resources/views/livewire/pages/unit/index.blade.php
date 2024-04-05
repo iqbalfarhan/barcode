@@ -1,6 +1,6 @@
 <div class="page-wrapper">
     <div class="flex justify-between items-center">
-        <input type="search" class="input input-bordered" wire:model.live='search"' placeholder="Pencarian" />
+        <input type="search" class="input input-bordered" wire:model.live="search" placeholder="Pencarian" />
         <button class="btn btn-primary" wire:click="$dispatch('createUnit')">
             <x-tabler-plus class="size-5" />
             <span class="hidden md:flex">Add Unit</span>

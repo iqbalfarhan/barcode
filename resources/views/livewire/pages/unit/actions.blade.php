@@ -4,7 +4,7 @@
         <form class="modal-box max-w-sm" wire:submit="simpan">
             <h3 class="font-bold text-lg">Form data unit</h3>
             <div class="py-4 space-y-2">
-                <label class="form-control">
+                <label class="form-control required">
                     <div class="label">
                         <span class="label-text">kode unit</span>
                     </div>
