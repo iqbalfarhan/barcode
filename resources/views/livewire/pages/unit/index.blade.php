@@ -22,13 +22,19 @@
                         <td>{{ Str::words($data->description, 4) }}</td>
                         <td>
                             <div class="flex gap-1">
-                                <button class="btn btn-xs btn-square btn-success"
+                                <a href="{{ route('unit.show', $data) }}" class="btn btn-xs gap-1 btn-info">
+                                    <x-tabler-folder class="size-4" />
+                                    <span>Detail</span>
+                                </a>
+                                <button class="btn btn-xs gap-1 btn-success"
                                     wire:click="$dispatch('editUnit', {'unit' :{{ $data->id }}})">
                                     <x-tabler-edit class="size-4" />
+                                    <span>Edit</span>
                                 </button>
-                                <button class="btn btn-xs btn-square btn-error"
+                                <button class="btn btn-xs gap-1 btn-error"
                                     wire:click="$dispatch('deleteUnit', {'unit' :{{ $data->id }}})">
                                     <x-tabler-trash class="size-4" />
+                                    <span>Delete</span>
                                 </button>
                             </div>
                         </td>

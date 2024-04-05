@@ -25,4 +25,5 @@ Route::middleware('auth')->group(function (){
     Route::get('/home', \App\Livewire\Pages\Home::class)->name('home');
     Route::get('/unit', \App\Livewire\Pages\Unit\Index::class)->name('unit.index');
     Route::get('/unit/scan', \App\Livewire\Pages\Unit\Scan::class)->name('unit.scan');
+    Route::get('/unit/{unit}', \App\Livewire\Pages\Unit\Show::class)->name('unit.show');
 });
