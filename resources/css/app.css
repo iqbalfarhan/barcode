@@ -9,4 +9,32 @@
         font-family: "Montserrat Alternates", sans-serif;
         @apply font-medium;
     }
+
+    thead {
+        @apply border-b-2 border-base-300 bg-base-200/20;
+    }
+
+    body {
+        @apply bg-base-200 min-h-screen;
+    }
+}
+
+@layer components {
+    .page-wrapper {
+        @apply container w-full max-w-5xl mx-auto space-y-6 p-6;
+    }
+
+    .table-wrapper {
+        @apply overflow-x-auto rounded-xl bg-base-100 border-2 border-base-300 whitespace-nowrap;
+    }
+
+    .input-bordered,
+    .textarea-bordered,
+    .select-bordered {
+        @apply border-2 border-base-300;
+    }
+
+    .modal {
+        @apply backdrop-blur-sm;
+    }
 }

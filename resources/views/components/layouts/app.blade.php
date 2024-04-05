@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
 
     <head>
         <meta charset="utf-8">
@@ -15,6 +15,7 @@
             <div class="drawer lg:drawer-open">
                 <input id="drawer" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">
+                    @livewire('partial.navbar')
                     {{ $slot }}
                 </div>
                 <div class="drawer-side">
