@@ -6,15 +6,21 @@
         </a>
     </li>
     <li>
+        <a href="{{ route('unit.scan') }}" @class(['active' => Route::is('unit.scan')]) wire:navigate>
+            <x-tabler-scan class="size-5" />
+            <span>Scan barcode</span>
+        </a>
+    </li>
+    <li>
         <a href="{{ route('unit.index') }}" @class(['active' => Route::is('unit.index')]) wire:navigate>
-            <x-tabler-car class="size-5" />
+            <x-tabler-truck class="size-5" />
             <span>Unit terdaftar</span>
         </a>
     </li>
     <li>
-        <a href="{{ route('unit.scan') }}" @class(['active' => Route::is('unit.scan')]) wire:navigate>
-            <x-tabler-scan class="size-5" />
-            <span>Scan barcode</span>
+        <a href="{{ route('profile') }}" @class(['active' => Route::is('profile')]) wire:navigate>
+            <x-tabler-user-circle class="size-5" />
+            <span>Edit profile</span>
         </a>
     </li>
     <li>

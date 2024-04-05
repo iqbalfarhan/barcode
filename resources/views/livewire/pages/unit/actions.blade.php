@@ -14,7 +14,7 @@
                     <div class="label">
                         <span class="label-text">Deskripsi unit</span>
                     </div>
-                    <textarea placeholder="Type here" class="textarea textarea-bordered" wire:model="form.description"></textarea>
+                    <textarea placeholder="Type here" rows="4" class="textarea textarea-bordered" wire:model="form.description"></textarea>
                 </label>
             </div>
             <div class="modal-action justify-between">

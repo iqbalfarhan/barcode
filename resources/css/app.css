@@ -46,4 +46,8 @@
         content: " *";
         @apply text-error;
     }
+
+    .form-control.placeholder .label .label-text-alt::before {
+        content: "* ";
+    }
 }

@@ -4,11 +4,11 @@
         <div class="py-4 space-y-2">
             <label class="input input-bordered flex items-center gap-2">
                 <x-tabler-user class="size-5" />
-                <input type="text" wire:model="username" placeholder="Username">
+                <input type="text" wire:model="username" class="grow" placeholder="Username">
             </label>
             <label class="input input-bordered flex items-center gap-2">
                 <x-tabler-key class="size-5" />
-                <input type="password" wire:model="password" placeholder="Password">
+                <input type="password" wire:model="password" class="grow" placeholder="Password">
             </label>
         </div>
 

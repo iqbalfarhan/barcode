@@ -19,7 +19,7 @@
                     <tr>
                         <td>{{ $no++ }}</td>
                         <td class="font-mono">{{ $data->name }}</td>
-                        <td>{{ Str::words($data->description, 4) }}</td>
+                        <td>{{ Str::limit($data->description, 30) }}</td>
                         <td>
                             <div class="flex gap-1">
                                 <a href="{{ route('unit.show', $data) }}" class="btn btn-xs gap-1 btn-info">
