@@ -8,7 +8,9 @@ use Livewire\Component;
 class Show extends Component
 {
     public Unit $unit;
-    public $count = 0;
+
+    protected $listeners = ['reload' => '$refresh'];
+    public $count = 30;
 
     public function mount(Unit $unit)
     {
