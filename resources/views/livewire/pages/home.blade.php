@@ -1,6 +1,7 @@
 <div class="page-wrapper">
     <div class="grid md:grid-cols-2 gap-2 md:gap-6">
-        <a href="{{ route('unit.scan') }}" class="card card-compact" wire:navigate>
+        {{-- <a href="{{ route('unit.scan') }}" class="card card-compact" wire:navigate> --}}
+        <a href="{{ route('unit.scan') }}" class="card card-compact" >
             <div class="card-body flex-row gap-3">
                 <div>
                     <div class="avatar placeholder">
