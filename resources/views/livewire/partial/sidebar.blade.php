@@ -6,7 +6,7 @@
         </a>
     </li>
     <li>
-        <a href="{{ route('unit.scan') }}" @class(['active' => Route::is('unit.scan')]) wire:navigate>
+        <a href="{{ route('unit.scan') }}" @class(['active' => Route::is('unit.scan')])>
             <x-tabler-scan class="size-5" />
             <span>Scan barcode</span>
         </a>

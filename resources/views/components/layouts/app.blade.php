@@ -29,7 +29,8 @@
             <div class="flex items-center bg-base-200 justify-center min-h-screen w-full">
                 {{ $slot }}
             </div>
-        @endguest
+        @endguest 
+        @stack('script') 
     </body>
 
 </html>
